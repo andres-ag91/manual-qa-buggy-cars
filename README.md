@@ -15,6 +15,10 @@ This portfolio project demonstrates a structured QA workflow, from requirements 
 3. [Defect Reports](03-defect-reports/README.md)
 4. [Results & Key Takeaways](04-results-key-takeaways/README.md)
 
+## Additional Resources
+
+- [Report Automation Scripts](report-automation/README.md)
+
 ---
 
 ## 1. Project Overview
