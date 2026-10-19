@@ -4,7 +4,7 @@
 ![Functional Testing](https://img.shields.io/badge/Testing-Functional-green)
 ![Defects Identified](https://img.shields.io/badge/Defects-4-red)
 
-A practical manual software testing project focused on user registration, password validation, login functionality, and post-login navigation in the Buggy Cars web application.
+A practical manual software testing project focused on user registration, password validation, login functionality, and post-login navigation in the Buggy Cars Rating web application.
 
 This portfolio project demonstrates a structured QA workflow, from requirements analysis and test design to test execution, defect reporting, and quality assessment.
 
@@ -15,110 +15,84 @@ This portfolio project demonstrates a structured QA workflow, from requirements 
 3. [Defect Reports](03-defect-reports/README.md)
 4. [Results & Key Takeaways](04-results-key-takeaways/README.md)
 
-## Additional Resources
-
-- [Report Automation Scripts](report-automation/README.md)
-
 ---
 
-## 1. Project Overview
+## Project at a Glance
 
-**Objective:** Evaluate the functional behavior of the Buggy Cars web application against the available requirements and acceptance criteria.
+| Category | Details |
+|---|---|
+| Project Type | Manual Software Testing |
+| Application | Buggy Cars Rating |
+| Testing Approach | Requirements-Based Functional Testing and Exploratory Testing |
+| Functional Test Cases | 26 |
+| Exploratory Tests | 4 |
+| Documented Defects | 4 |
+| Test Environment | Web application accessed through Google Chrome |
+| Documentation Tools | Google Sheets and Google Docs |
+| Automation Tools | Google Apps Script, developed with AI assistance |
 
-**Testing scope:**
-- User registration and form validation
-- Password requirements and validation feedback
-- Login functionality
-- Post-login navigation
-- Consistency between frontend validation and backend responses
+## Testing Scope
 
-**Testing approach:** Requirements-based functional testing and exploratory testing.
+The project focused on evaluating authentication-related workflows and identifying inconsistencies between expected and observed application behavior.
 
-**Test environment:** Web application accessed through Google Chrome.
+Key areas included:
 
-The project follows a structured QA workflow supported by documented test cases, execution results, defect reports, and supporting evidence.
+- User registration and form validation.
+- Password length and character requirements.
+- Frontend validation indicators and backend responses.
+- Login functionality.
+- Post-login navigation.
 
-## 2. Test Coverage & Execution
+Testing combined predefined functional test cases with exploratory testing to investigate application behavior and document potential defects.
 
-The project includes **26 functional test cases and 4 exploratory tests** designed to evaluate expected behavior and investigate potential functional inconsistencies.
+## Defects Identified
 
-**Testing techniques:**
-- Positive and negative testing
-- Boundary value analysis
-- Input validation testing
-- Exploratory testing
-- Expected versus actual result analysis
+Four functional defects were documented during the testing exercise.
 
-**Key areas covered:**
-- Registration form behavior and validation
-- Password length and character requirements
-- Frontend validation indicators and backend responses
-- Login behavior and post-login navigation
-
-Test execution focused on comparing observed application behavior with documented requirements and acceptance criteria. Identified issues were recorded and linked to the relevant test cases to support traceability.
-
-## 3. Defect Reports
-
-**Four functional defects were documented** across registration, password validation, and login navigation.
-
-| Bug ID | Defect Summary | Priority |
+| Bug ID | Summary | Priority |
 |---|---|---|
-| BCR-01 | Registration fails with a password that appears valid under the documented requirements | High |
-| BCR-02 | Register button remains enabled for a password below the minimum required length | High |
-| BCR-03 | Successful login does not navigate to the expected home page | High |
-| BCR-04 | Register button remains enabled when the password lacks an uppercase letter | High |
+| BCR-01 | Registration fails with a password that appears valid under the documented requirements. | High |
+| BCR-02 | The Register button remains enabled when the password is below the documented minimum length. | High |
+| BCR-03 | Successful login does not navigate to the expected home page. | High |
+| BCR-04 | The Register button remains enabled when the password lacks an uppercase letter, although the backend rejects the submission. | High |
 
-### Key Observations
+The findings highlighted inconsistencies in password validation, differences between frontend and backend behavior, and unexpected post-login navigation.
 
-- **BCR-01 — Registration failure:** The backend returns a numeric-character requirement even though that requirement is not specified in the documented criteria. The frontend displays a valid indicator.
-- **BCR-02 — Password length validation:** The registration button remains enabled for a five-character password, below the documented six-character minimum.
-- **BCR-03 — Login navigation:** After a successful login, the application remains on the new-user registration screen instead of navigating to the expected home page.
-- **BCR-04 — Uppercase validation:** The registration button remains enabled when the password lacks an uppercase letter, although the backend subsequently rejects the submission.
+For detailed observations and defect documentation, see [Defect Reports](03-defect-reports/README.md).
 
-Each defect was documented with reproduction steps, expected and actual results, and supporting information. Traceability was maintained between the relevant test cases and the corresponding defect reports.
-
-## 4. Results & Key Takeaways
-
-The testing exercise identified functional inconsistencies affecting important authentication-related workflows.
-
-**Main findings:**
-- Password validation behavior did not consistently match the documented requirements.
-- Frontend validation allowed some inputs that were subsequently rejected by the backend.
-- The tested post-login navigation flow did not behave as expected.
-
-**Recommended Next Steps:**
-1. Review and clarify password validation requirements.
-2. Align frontend validation feedback with the agreed requirements and backend behavior.
-3. Investigate and correct the post-login navigation issue.
-4. Re-test affected scenarios after fixes and perform regression testing.
-
-**QA Skills Demonstrated:**
+## QA Skills Demonstrated
 
 Requirements Analysis | Test Case Design | Manual Functional Testing | Exploratory Testing | Boundary Value Analysis | Test Execution | Defect Reporting | Test Traceability | QA Documentation
 
-**Project Conclusion:** This project demonstrates the practical application of a structured manual QA workflow, including test design, execution, defect identification, reproducible reporting, and evidence-based quality assessment.
+## Additional Resources: QA Report Automation
+
+To complement the manual testing documentation, this project includes automation scripts developed with AI assistance using Google Apps Script. The scripts are designed to reduce repetitive QA documentation tasks and support bilingual reporting.
+
+**The automation scripts support two workflows:**
+
+- **Spreadsheet Translation:** Translates test documentation in Google Sheets from Spanish to English and creates a separate copy of the spreadsheet.
+- **Automated Bug Report Generation:** Extracts relevant data from Google Sheets and generates structured bug reports in Google Docs in Spanish or English.
+
+These tools demonstrate the practical application of automation to support documentation workflows, improve consistency, and reduce repetitive manual work.
+
+**[Explore the Report Automation Scripts →](report-automation/README.md)**
+
+## Project Documentation
+
+Explore each section for more information about the testing process and deliverables:
+
+- [Project Overview](01-project-overview/README.md) — Project objectives, scope, and testing approach.
+- [Test Coverage & Execution](02-test-coverage-execution/README.md) — Functional test cases, exploratory testing, and execution methodology.
+- [Defect Reports](03-defect-reports/README.md) — Summaries and observations for defects BCR-01 through BCR-04.
+- [Results & Key Takeaways](04-results-key-takeaways/README.md) — Findings, demonstrated skills, and recommended next steps.
+- [Report Automation Scripts](report-automation/README.md) — Documentation for the translation and bug report generation scripts.
 
 ---
 
-### Project Resources
+## Project Conclusion
 
-Supporting documentation will be linked here:
+This project demonstrates the practical application of a structured manual QA workflow, including test design, execution, defect identification, reproducible reporting, and evidence-based quality assessment.
 
-- **Test Cases & Execution Results:** Detailed test cases, expected and actual results, and execution status.
-- **Defect Reports:** Full reports for defects BCR-01 through BCR-04.
-- **QA Documentation:** Additional project documentation and supporting evidence.
+It also illustrates how AI-assisted scripting can support repetitive QA documentation tasks and help maintain test materials in multiple languages.
 
-*Links to the supporting documents will be added once the final document structure is confirmed.*
-
-## Additional Resources: QA Report Automation
-
-To complement the manual testing documentation, this project includes AI-assisted automation scripts developed with Google Apps Script to reduce repetitive QA documentation tasks.
-
-The scripts support two workflows:
-
-- **Spreadsheet Translation:** Translates test documentation from Spanish to English and creates a separate copy of the spreadsheet.
-- **Automated Bug Report Generation:** Extracts relevant data from Google Sheets and generates structured bug reports in Google Docs in either Spanish or English.
-
-These scripts demonstrate the practical use of automation to support bilingual QA documentation, improve consistency, and reduce manual reporting effort.
-
-**Explore the scripts and implementation details:** [Report Automation Scripts](report-automation/README.md).
+*This is a portfolio testing project. The documented findings reflect the observations recorded during testing and do not imply that the identified defects have been fixed or independently verified by the application owner.*
