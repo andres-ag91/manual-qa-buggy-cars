@@ -10,10 +10,10 @@ This portfolio project demonstrates a structured QA workflow, from requirements 
 
 ## Table of Contents
 
-1. [Project Overview](#1-project-overview)
-2. [Test Coverage & Execution](#2-test-coverage--execution)
-3. [Defect Reports](#3-defect-reports)
-4. [Results & Key Takeaways](#4-results--key-takeaways)
+1. [Project Overview](01-project-overview/README.md)
+2. [Test Coverage & Execution](02-test-coverage-execution/README.md)
+3. [Defect Reports](03-defect-reports/README.md)
+4. [Results & Key Takeaways](04-results-key-takeaways/README.md)
 
 ---
 
