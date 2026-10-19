@@ -109,3 +109,16 @@ Supporting documentation will be linked here:
 - **QA Documentation:** Additional project documentation and supporting evidence.
 
 *Links to the supporting documents will be added once the final document structure is confirmed.*
+
+## Additional Resources: QA Report Automation
+
+To complement the manual testing documentation, this project includes AI-assisted automation scripts developed with Google Apps Script to reduce repetitive QA documentation tasks.
+
+The scripts support two workflows:
+
+- **Spreadsheet Translation:** Translates test documentation from Spanish to English and creates a separate copy of the spreadsheet.
+- **Automated Bug Report Generation:** Extracts relevant data from Google Sheets and generates structured bug reports in Google Docs in either Spanish or English.
+
+These scripts demonstrate the practical use of automation to support bilingual QA documentation, improve consistency, and reduce manual reporting effort.
+
+**Explore the scripts and implementation details:** [Report Automation Scripts](report-automation/README.md).
