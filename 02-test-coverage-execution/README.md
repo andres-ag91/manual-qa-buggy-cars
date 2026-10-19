@@ -2,45 +2,88 @@
 
 ## Overview
 
-This section describes the test coverage and execution approach used in the Buggy Cars Rating manual QA project.
+This section describes the test coverage, test design approach, and execution process used to evaluate the Buggy Cars Rating web application.
 
-The testing activities were organized to validate application functionality, evaluate expected versus actual behavior, and record findings in structured QA documentation.
+The testing activities focused on authentication-related functionality, including user registration, password validation, login behavior, and post-login navigation.
+
+The objective was to assess whether the application behaved consistently with its documented requirements and to identify functional inconsistencies.
 
 ## Test Coverage
 
-| Test Type | Quantity | Purpose |
+The project includes the following testing activities:
+
+| Testing Activity | Quantity | Description |
 |---|---:|---|
-| Functional Testing | 26 test cases | Validate application functionality against expected results |
-| Exploratory Testing | 4 tests | Investigate application behavior and identify potential issues |
+| Functional Test Cases | 26 | Designed to verify application behavior against documented requirements and expected results. |
+| Exploratory Tests | 4 | Conducted to investigate application behavior beyond predefined test scenarios. |
+| Documented Defects | 4 | Issues recorded during the testing activities. |
 
-## Functional Testing
+## Areas Tested
 
-Functional test cases were designed to verify application behavior under defined conditions.
+The main areas covered by the test cases included:
 
-The test documentation organizes the testing process around test scenarios, execution steps, expected results, actual results, and outcomes where applicable.
+- **User Registration:** Registration form behavior and submission.
+- **Password Validation:** Password length and character requirements.
+- **Frontend Validation:** Validation indicators and Register button behavior.
+- **Backend Validation:** Responses returned when submitting registration data.
+- **Login Functionality:** Authentication behavior using user credentials.
+- **Post-Login Navigation:** Navigation after a successful login.
+- **Validation Consistency:** Comparison of frontend feedback with backend responses.
 
-The objective was to identify inconsistencies between expected and observed application behavior and provide clear, reproducible information for further investigation.
+## Test Design Approach
 
-## Exploratory Testing
+The test cases were designed based on the available requirements and expected application behavior.
 
-Exploratory testing was used to investigate application behavior beyond predefined test steps.
+The testing approach included:
 
-These tests supported the identification of additional issues and helped examine input validation and application responses to different user actions.
+- **Requirements-Based Testing:** Comparing actual application behavior against documented requirements.
+- **Functional Testing:** Verifying that application features behaved as expected.
+- **Boundary Value Analysis:** Examining behavior around relevant password-length boundaries.
+- **Exploratory Testing:** Investigating unexpected behavior beyond predefined test scenarios.
+- **Expected vs. Actual Results:** Recording differences between expected and observed behavior.
 
-## Test Execution Approach
+## Test Execution Process
 
-1. Review the functionality and define the test scenario.
-2. Execute the test steps manually in the browser.
-3. Compare actual behavior with the expected result.
-4. Record the outcome and relevant observations.
-5. Document defects when behavior does not match expectations.
+The testing workflow followed these general steps:
 
-## Documentation
+1. Review the available requirements and expected application behavior.
+2. Identify test scenarios and define test cases.
+3. Execute the test cases against the web application.
+4. Record the observed results and execution status.
+5. Investigate unexpected behavior and document potential defects.
+6. Prepare defect reports with relevant details and supporting evidence where available.
 
-Test cases and execution records were organized using Google Sheets. Identified defects were documented separately in structured bug reports.
+## Test Environment
 
-Google Apps Script automation was also developed with AI assistance to reduce repetitive documentation work, including spreadsheet translation and bug report generation.
+| Component | Details |
+|---|---|
+| Application | Buggy Cars Rating |
+| Application Type | Web Application |
+| Browser | Google Chrome |
+| Test Approach | Manual Functional Testing and Exploratory Testing |
+| Test Documentation | Google Sheets and Google Docs |
 
-## Tools
+## Detailed Test Documentation
 
-Manual Testing | Functional Testing | Exploratory Testing | Test Case Design | Google Sheets | Google Docs | Google Apps Script
+The complete test documentation is available in Google Sheets, including the detailed test cases and recorded execution information for this portfolio project.
+
+**[View Test Cases & Execution Results →](PASTE_YOUR_GOOGLE_SHEETS_LINK_HERE)**
+
+## Key Observations
+
+The testing activities identified inconsistencies involving password validation, frontend and backend behavior, and post-login navigation.
+
+These observations were documented in individual defect reports to support clear communication of the issues and their reproduction.
+
+For further details, see the [Defect Reports](../03-defect-reports/README.md) section.
+
+## Tools Used
+
+- **Google Sheets:** Test case documentation and execution records.
+- **Google Docs:** Defect documentation.
+- **Google Apps Script:** Supporting documentation and reporting automation.
+- **Google Chrome:** Web application testing.
+
+## Project Scope Note
+
+This is a portfolio testing project. The test counts and findings describe the activities documented for this exercise. They do not imply that the application owner has confirmed or fixed the reported issues.
