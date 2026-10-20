@@ -67,7 +67,8 @@ The testing workflow followed these general steps:
 
 The complete test documentation is available in Google Sheets, including the detailed test cases and recorded execution information for this portfolio project.
 
-<p><a href="https://docs.google.com/spreadsheets/d/1AjlzuHKm_yWQh6FISY07VS4zaaXM__6_xC0DLGYUVrM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View Test Cases &amp; Execution Results →</a></p>
+**[View Test Cases & Execution Results →](https://docs.google.com/spreadsheets/d/1AjlzuHKm_yWQh6FISY07VS4zaaXM__6_xC0DLGYUVrM/edit?usp=sharing)**
+
 ## Key Observations
 
 The testing activities identified inconsistencies involving password validation, frontend and backend behavior, and post-login navigation.
