@@ -67,7 +67,7 @@ The testing workflow followed these general steps:
 
 The complete test documentation is available in Google Sheets, including the detailed test cases and recorded execution information for this portfolio project.
 
-**[View Test Cases & Execution Results →](PASTE_YOUR_GOOGLE_SHEETS_LINK_HERE)**
+**[View Test Cases & Execution Results →][(PASTE_YOUR_GOOGLE_SHEETS_LINK_HERE)](https://docs.google.com/spreadsheets/d/1AjlzuHKm_yWQh6FISY07VS4zaaXM__6_xC0DLGYUVrM/edit?usp=sharing)**
 
 ## Key Observations
 
